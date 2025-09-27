@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - FonoVerse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .product-card {
+      transition: all 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-4 bg-blue-900 text-white shadow-lg">
+    <h1 class="text-xl font-bold">FonoVerse</h1>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-200 transition">Home</a>
+      <a href="products.html" class="hover:text-blue-200 transition">Products</a>
+      <a href="cart.html" class="hover:text-blue-200 transition">Cart</a>
+      <a href="login.html" class="hover:text-blue-200 transition">Login</a>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <section class="py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-blue-900 text-center">Explore Our Collection</h2>
+
+      <!-- Filters -->
+      <div class="mb-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <select class="border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          <option>All Categories</option>
+          <option>Flagship</option>
+          <option>Mid-range</option>
+          <option>Budget</option>
+          <option>Gaming</option>
+        </select>
+        <select class="border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          <option>Sort by Price</option>
+          <option>Low to High</option>
+          <option>High to Low</option>
+        </select>
+        <select class="border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          <option>All Brands</option>
+          <option>Apple iPhone 14 Pro</option>
+          <option>Samsung Galaxy S22 Ultra</option>
+          <option>Apple iPhone 16 Pro</option>
+        </select>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Repeat this block for each product -->
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/3973978/pexels-photo-3973978.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Pixel One">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Apple iPhone 13</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★☆ <span class="text-sm text-gray-500 ml-2">(128)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹59,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/3586249/pexels-photo-3586249.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pixel Two">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Apple iPhone 14 Pro</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★★ <span class="text-sm text-gray-500 ml-2">(256)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹69,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/38639/mockup-psd-ipad-iphone-38639.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Pixel Three">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Samsung Galaxy Tab A</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★☆ <span class="text-sm text-gray-500 ml-2">(198)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹49,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/12570216/pexels-photo-12570216.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Pixel Four">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Apple iPhone 15</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★★ <span class="text-sm text-gray-500 ml-2">(342)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹89,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/31295417/pexels-photo-31295417/free-photo-of-smartphone-with-blue-screen-on-yellow-background.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Pixel Five">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Oppo F39</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★☆ <span class="text-sm text-gray-500 ml-2">(175)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹39,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&h=800&q=80" alt="Pixel Six">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Samsung Galaxy Tab S9 FE</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★★ <span class="text-sm text-gray-500 ml-2">(421)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹26,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/38639/mockup-psd-ipad-iphone-38639.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Pixel Seven">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Samsung Galaxy Tab 15</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★☆ <span class="text-sm text-gray-500 ml-2">(203)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹69,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-4 h-64 bg-gray-50 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/12570216/pexels-photo-12570216.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Pixel Eight">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Apple iPhone 15 Pro</h3>
+            <div class="flex items-center mt-1 mb-2 text-yellow-400">★★★★★ <span class="text-sm text-gray-500 ml-2">(387)</span></div>
+            <p class="text-blue-600 font-semibold text-lg">₹79,999</p>
+            <a href="cart.html" class="mt-3 w-full inline-block text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center">
+        <nav class="flex items-center gap-1">
+          <a href="#" class="px-4 py-2 border rounded-lg hover:bg-blue-50 transition">&laquo;</a>
+          <a href="#" class="px-4 py-2 border rounded-lg bg-blue-600 text-white">1</a>
+          <a href="#" class="px-4 py-2 border rounded-lg hover:bg-blue-50 transition">2</a>
+          <a href="#" class="px-4 py-2 border rounded-lg hover:bg-blue-50 transition">3</a>
+          <a href="#" class="px-4 py-2 border rounded-lg hover:bg-blue-50 transition">&raquo;</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-950 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-xl font-bold mb-4">FonoVerse</h4>
+          <p class="text-blue-200">Premium smartphones for everyone.</p>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-4">Quick Links</h5>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-blue-200 hover:text-white transition">Home</a></li>
+            <li><a href="products.html" class="text-blue-200 hover:text-white transition">Products</a></li>
+            <li><a href="cart.html" class="text-blue-200 hover:text-white transition">Cart</a></li>
+            <li><a href="login.html" class="text-blue-200 hover:text-white transition">Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-4">Support</h5>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-blue-200 hover:text-white transition">Contact Us</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white transition">FAQs</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white transition">Shipping</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white transition">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-4">Newsletter</h5>
+          <form class="flex">
+            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-900 w-full">
+            <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r hover:bg-blue-700 transition">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300">
+        &copy; 2025 FonoVerse. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
