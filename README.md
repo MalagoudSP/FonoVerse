@@ -9,6 +9,7 @@ It focuses on clean layouts, smooth navigation, and a lightweight design that en
 
 ⚙️ Features
 
+
 📱 Mobile-first responsive design
 
 🛍️ Product listings with grid view
