@@ -2,12 +2,13 @@ FonoVerse
 ---
 
 It is a simple yet elegant mobile-first e-commerce front-end built using HTML, CSS, and a bit of JavaScript.
+
 It focuses on clean layouts, smooth navigation, and a lightweight design that ensures fast loading and responsive performance across all devices.
 
 
 ---
 
-⚙️ Features
+ ## Features
 
 
 📱 Mobile-first responsive design
