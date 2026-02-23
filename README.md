@@ -5,6 +5,8 @@ It is a simple yet elegant mobile-first e-commerce front-end built using HTML, C
 
 It focuses on clean layouts, smooth navigation, and a lightweight design that ensures fast loading and responsive performance across all devices.
 
+![IMG_20260224_030143](https://github.com/user-attachments/assets/88489cf5-128d-4399-91f2-637e9a32c91b)
+![IMG_20260224_030143](https://github.com/user-attachments/assets/88489cf5-128d-4399-91f2-637e9a32c91b)
 
 ---
 
