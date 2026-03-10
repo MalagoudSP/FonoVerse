@@ -1,5 +1,9 @@
 FonoVerse 
 ---
+![Uploading Screenshot (174).png…]()
+
+![Uploading Screenshot (175).png…]()
+
 
 It is a simple yet elegant mobile-first e-commerce front-end built using HTML, CSS, and a bit of JavaScript.
 
